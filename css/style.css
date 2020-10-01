@@ -46,9 +46,11 @@ h1{
   text-align: left;
 }
 .box-mail{
-  width: 38%;
+  width: 40%;
   background: #fff;
   border-radius: 8px;
+  margin-top: 40px;
+  margin-left: 40px;
 }
 .bg-info{
   color: #666;
@@ -79,4 +81,39 @@ h4{
 }
 .blue{
   color: #2485fd;
+}
+/* Header-sub */
+.header-sub{
+  background: #f3f5f9;
+}
+h5{
+  margin-top: 40px;
+  text-transform: uppercase;
+}
+.header-sub ul li img{
+ max-width: 200px;
+ padding: 10px;
+}
+.header-sub a{
+  color:#2485fd;
+}
+
+@media screen and (max-width: 768px){
+  h1{
+    font-size: 40px;
+  }
+  .box-mail{
+    width: 80%;
+    background: #fff;
+    border-radius: 8px;
+    margin-top: 60px;
+    margin-left: 40px;
+  }
+  .header-sub ul li img{
+   max-width: 80px;
+   padding: 8px;
+  }
+  .main-header{
+    height: 800px;
+  }
 }
