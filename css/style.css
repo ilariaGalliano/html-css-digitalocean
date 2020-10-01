@@ -2,3 +2,81 @@
 body{
   font-family: 'Roboto', sans-serif;
 }
+h1{
+  font-size: 55px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 60px;
+}
+/* Button */
+.btn{
+  border-color: #2485fd;
+  color: #2485fd;
+  padding: 8px 14px;
+  margin-top: 6px;
+}
+/* Navbar */
+.do-logo{
+  max-height: 40px;
+}
+.navbar-default{
+  background-color: #fff;
+}
+.navbar{
+  border: 0;
+  border-radius: 0;
+  padding-top: 15px;
+  margin-bottom: 5px;
+}
+.navbar-default .navbar-nav > li > a{
+  color:  #666;
+}
+/* Main-Header */
+.main-header{
+  background-image: url('../assets/bg-banner-home.jpg');
+  background-size: cover;
+  height: 400px;
+}
+.main-header p{
+  font-size: 20px;
+  color: rgba(244, 244, 244, 0.7);
+}
+.google-icon{
+  max-height: 20px;
+  text-align: left;
+}
+.box-mail{
+  width: 38%;
+  background: #fff;
+  border-radius: 8px;
+}
+.bg-info{
+  color: #666;
+  background: #fff;
+  border: 3px solid rgba(244, 244, 244, 0.7);
+  box-shadow: 10px;
+  border-radius: 8px;
+  padding: 5px;
+}
+.bg-primary{
+  border: 3px solid rgba(244, 244, 244, 0.7);
+  box-shadow: 10px;
+  border-radius: 8px;
+  padding: 5px;
+}
+.form-group .bg-info p{
+  color: black;
+}
+.text-google p{
+  font-size: 18px;
+  color: #666;
+}
+.text-google .white{
+  color: white;
+}
+h4{
+  font-size: 12px;
+}
+.blue{
+  color: #2485fd;
+}
