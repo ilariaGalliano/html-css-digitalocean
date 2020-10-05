@@ -11,6 +11,17 @@ h1{
 a{
   color:#2485fd;
 }
+h4{
+  font-size: 12px;
+}
+h5{
+  margin-top: 40px;
+  text-transform: uppercase;
+}
+.box-developers a > i:hover{
+  transform: scale(1.5);
+  transition: 1s;
+}
 /* Button */
 .btn{
   border-color: #2485fd;
@@ -47,6 +58,7 @@ a{
 }
 .google-icon{
   max-height: 20px;
+  float: left;
 }
 .box-mail{
   width: 40%;
@@ -79,19 +91,12 @@ a{
 .text-google .white{
   color: white;
 }
-h4{
-  font-size: 12px;
-}
 .blue{
   color: #2485fd;
 }
 /* Header-sub */
 .header-sub{
   background: #f3f5f9;
-}
-h5{
-  margin-top: 40px;
-  text-transform: uppercase;
 }
 .header-sub ul li img{
  max-width: 160px;
@@ -135,13 +140,24 @@ h5{
 .developers{
   background-color: #f3f5f9;
 }
+.box-developers{
+  position: relative;
+}
+.white-box{
+  width: 550px;
+}
 .box-developers img{
-  max-height: 500px;
+  max-height: 430px;
   margin-top: 30px;
 }
 .box-developers ul li a i{
   font-size: 50px;
   color: #666;
+  position: absolute;
+  top: 50%;
+}
+.fa-angle-left{
+  margin-left: -30px;
 }
 .developers h2{
   font-weight: bold;
@@ -167,7 +183,7 @@ h5{
   margin-top: 20px;
   text-transform: capitalize;
 }
-/* Section Customers */
+/* Customers */
 .customers{
   padding-top:10px;
   background:#003bb8;
@@ -199,12 +215,12 @@ border-bottom: 1px solid white;
 .cities li p{
   width: 260px;
 }
-/* Section Developers 2 */
+/* Developers 2 */
 .developers{
   padding-top: 20px;
 }
 .white-box{
-  width: 590px;
+  width: 550px;
   height: 260px;
   background: #fff;
 }
@@ -225,7 +241,8 @@ border-bottom: 1px solid white;
 }
 /* Footer-sub */
 .footer-sub{
-  background:#003bb8;
+  background:#031c4e;
+  padding-top: 25px;
 }
 .footer-sub span{
   display: inherit;
@@ -256,17 +273,19 @@ border-bottom: 1px solid white;
   font-size: 14px;
   color: #fff;
 }
-/* tooltip */ /*NON VISIBILE*/
-.tooltip{
-  position: relative;
+/* Tooltip */
+.tooltip-hub{
   width: 300px;
   padding: 10px;
   background: #fff;
+  position: fixed;
+  bottom: 60px;
+  right: 120px;
   border-radius: 5px;
   line-height: 1.45;
   filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.5););
 }
-.tooltip::before{
+.tooltip-hub::before{
   content: "";
   position: absolute;
   bottom:15px;
@@ -281,9 +300,10 @@ border-bottom: 1px solid white;
 }
 .chat-img img{
   position: absolute;
-  top: 0;
-  left: 200px;
-  width: 80px;
+  max-width: 90px;
+  position: absolute;
+  right: -108px;
+  bottom: 48%;
 }
 /* Media Query da 370px Mobile a 750px*/
 @media screen and (max-width: 750px){
@@ -310,7 +330,7 @@ border-bottom: 1px solid white;
   }
   .box-deploy {
     width: 180px;
-    height: 220px;
+    height: 200px;
     padding: 5px;
     margin-bottom: 20px;
   }
@@ -331,7 +351,7 @@ border-bottom: 1px solid white;
     border-left: 1px solid #666;
   }
   .box-developers img{
-    max-height: 120px;
+    max-height: 160px;
     margin-top: 30px;
   }
   .box-developers ul li a i{
@@ -352,7 +372,7 @@ border-bottom: 1px solid white;
   }
   .white-box{
     width: 250px;
-    height: 300px;
+    height: 150px;
     background: #fff;
   }
   .white-box img{
@@ -361,14 +381,13 @@ border-bottom: 1px solid white;
   .cities li p{
     width: 150px;
   }
-  .chat-img{
-    position: relative;
+  .btn-footer{
+    font-size: 12px;
+    padding: 10px;
+    margin: 20px;
   }
-  .chat-img img{
-    position: absolute;
-    top: 10px;
-    left: 200px;
-    width: 90px;
+  .pre-footer h2{
+    font-size: 24px;
   }
 }
 /* Media Query da 769px Tablet a 970px*/
@@ -394,12 +413,16 @@ border-bottom: 1px solid white;
     float: none;
     margin: 15px 0;
   }
-  /* Styles sections*/
+  /* Styles Body Sections*/
   .box-mail{
     width: 90%;
   }
   .main-header{
     height: 820px;
+  }
+  .header-sub ul li img{
+    max-width: 90px;
+    padding: 0;
   }
   .list-jumbotron ul{
     font-size: 16px;
@@ -407,7 +430,7 @@ border-bottom: 1px solid white;
   }
   .box-deploy {
     width: 180px;
-    height: 220px;
+    height: 200px;
     padding: 5px;
   }
   .box-deploy h5{
@@ -418,6 +441,15 @@ border-bottom: 1px solid white;
   }
   .box-deploy p{
     font-size: 14px;
+  }
+  .white-box{
+    margin-top: 10px;
+    width: 300px;
+    height: 290px;
+    background: #fff;
+  }
+  .jumbotron{
+    padding-bottom: 0;
   }
   .list-jumbotron ul{
     font-size: 16px;
@@ -448,17 +480,8 @@ border-bottom: 1px solid white;
     font-size: 35px;
     color: #2485fd;
   }
-  .box-developers img{
-    max-height: 180px;
-    margin-top: 30px;
-  }
-  .chat-img{
-    position: relative;
-  }
-  .chat-img img{
-    position: absolute;
-    top: -82px;
-    left: 200px;
-    width: 70px;
+  .tooltip-hub{
+    width: 200px;
+    font-size: 12px;
   }
 }
